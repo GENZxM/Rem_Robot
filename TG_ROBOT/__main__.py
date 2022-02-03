@@ -97,21 +97,21 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   REM = event.sender.first_name
-  REM = "**♡ I,m REM Robot 愛** \n\n"
+  REM = "**♡ I,m Zero Two Robot 愛** \n\n"
   REM += "**♡ I'm Working With Awesome Speed**\n\n"
-  REM += "**♡ REM: LATEST Version**\n\n"
-  REM += "**♡ My Creator:** [Rajkumar](t.me/Awesome_RJ)\n\n"
+  REM += "**♡ XFlick: LATEST Version**\n\n"
+  REM += "**♡ My Creator:** [XFlick](t.me/XFlick)\n\n"
   REM += "**♡ python-Telegram-Bot: 13.7**\n\n"
   REM_BUTTON = [
       [
-          Button.url("🚑 Support", f"https://t.me/{SUPPORT_CHAT}"),
-          Button.url("📢 Updates", "https://t.me/Black_Knights_Union")
+          Button.url("🚑 Support", f"https://t.me/+hpCwlBcPJtI1ZDU9"),
+          Button.url("📢 Updates", "https://t.me/animeXflickz")
       ]
   ]
   await telethn.send_file(
       event.chat_id,
       REM_PHOTO,
-      caption = REM,
+      caption = ZeroTwo,
       buttons = REM_BUTTON,
   )
 
@@ -140,13 +140,13 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-HELP_MSG = "Click the button below to get help manu in your pm."
+HELP_MSG = "Click the button below to get help menu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/2909a312d9438798d237a.png) 」────
-*Hola! {},*
-*I am an Anime themed advance group management bot with a lot of Sexy Features.*
+────「 [{}](https://transfer.sh/OqBmMX/photo_2022-02-03_08-56-03.jpg) 」────
+*Helo! {},*
+*I am an Anime themed advance group management bot with a lot of Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *users, across* `{}` *chats.*
@@ -167,16 +167,16 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/HindiKDrama"),
+                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/SharingUserbot"),
                        InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             url=f"https://t.me/+hpCwlBcPJtI1ZDU9"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/Black_Knights_Union")
+                             url="https://t.mE/animeXflickz")
                      ], 
     ]
 
@@ -315,11 +315,11 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="🚑 Support",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                            url=f"https://t.me/+hpCwlBcPJtI1ZDU9",
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/Black_Knights_Union",
+                            url="https://t.me/animeXflickz",
                         ),
                     ]
                 ]
@@ -455,12 +455,12 @@ def REM_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="[► Back ◄]", callback_data="REM_back")
+                    InlineKeyboardButton(text="[► Back ◄]", callback_data="DARLING_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "REM_back":
+    elif query.data == "DARLING_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
                 PM_START_TEXT.format(
@@ -490,7 +490,7 @@ def get_help(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Open In Private Chat",
+                            text="Open In Private Chat duh",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
