@@ -1,5 +1,5 @@
 {
-      "name": "Rem Robot",
+      "name": "Zero Two Robot",
       "description": "A Powerful  Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -9,8 +9,8 @@
          "Rem"
       ],
     
-   "logo":    "https://telegra.ph/file/4977514f30ff13c11363b.jpg",  
-   "repository": "https://github.com/T-O-B-I-I/Rem_Robot",
+   "logo":    "https://transfer.sh/OqBmMX/photo_2022-02-03_08-56-03.jpg",  
+   "repository": "https://github.com/GENZxM/Rem_Robot",
    "addons": [
           {
          "options": {
